@@ -1,12 +1,3 @@
-[submodule "json"]
-	path = libs/json
-	url = https://github.com/nlohmann/json.git
-[submodule "spdlog"]
-	path = libs/spdlog
-	url = https://github.com/gabime/spdlog
-[submodule "CLI11"]
-	path = libs/CLI11
-	url = https://github.com/CLIUtils/CLI11
 [submodule "libs/enet"]
 	path = libs/enet
 	url = https://github.com/zpl-c/enet
@@ -31,3 +22,12 @@
 [submodule "libs/cpptrace"]
 	path = libs/cpptrace
 	url = https://github.com/jeremy-rifkin/cpptrace
+[submodule "libs/json"]
+	path = libs/json
+	url = https://github.com/nlohmann/json.git
+[submodule "libs/spdlog"]
+	path = libs/spdlog
+	url = https://github.com/gabime/spdlog
+[submodule "libs/CLI11"]
+	path = libs/CLI11
+	url = https://github.com/CLIUtils/CLI11
