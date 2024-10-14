@@ -1,0 +1,11 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "C++ Debugger",
+            "type": "codelldb",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/src/NovalandServer/NovalandServer.exe"
+        }
+    ]
+}

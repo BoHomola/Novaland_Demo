@@ -1,0 +1,33 @@
+[submodule "json"]
+	path = libs/json
+	url = https://github.com/nlohmann/json.git
+[submodule "spdlog"]
+	path = libs/spdlog
+	url = https://github.com/gabime/spdlog
+[submodule "CLI11"]
+	path = libs/CLI11
+	url = https://github.com/CLIUtils/CLI11
+[submodule "libs/enet"]
+	path = libs/enet
+	url = https://github.com/zpl-c/enet
+[submodule "libs/raylib"]
+	path = libs/raylib
+	url = https://github.com/BoHomola/raylib.git
+[submodule "libs/godot-cpp"]
+	path = libs/godot-cpp
+	url = https://github.com/BoHomola/godot-cpp.git
+[submodule "libs/zpp_bits"]
+	path = libs/zpp_bits
+	url = https://github.com/BoHomola/zpp_bits
+[submodule "libs/box2d"]
+	path = libs/box2d
+	url = https://github.com/BoHomola/box2d.git
+[submodule "libs/tracy"]
+	path = libs/tracy
+	url = https://github.com/wolfpld/tracy
+[submodule "libs/curl"]
+	path = libs/curl
+	url = https://github.com/curl/curl.git
+[submodule "libs/cpptrace"]
+	path = libs/cpptrace
+	url = https://github.com/jeremy-rifkin/cpptrace

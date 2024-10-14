@@ -1,0 +1,30 @@
+////////////////////////////////////////////////////////////////////////////////
+// File:        SerClient.h
+// Author:      Bohumil Homola
+// Date:        09/16/2023
+// Description:
+////////////////////////////////////////////////////////////////////////////////
+#pragma once
+////////////////////////////////////////////////////////////////////////////////
+
+#include "SerShared.h"
+
+namespace Novaland
+{
+namespace Ser
+{
+
+struct PlayerMovementInput
+{
+    u32 tick = 0;
+    Vector2 input;
+};
+
+struct PlayerKeyInput
+{
+    u32 tick = 0;
+    u8 keys = 0;
+};
+
+} // namespace Ser
+} // namespace Novaland

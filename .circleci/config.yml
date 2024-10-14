@@ -1,0 +1,35 @@
+version: 2.1
+executors:
+  ubuntu:
+    machine:
+      image: ubuntu-2204:2023.04.2
+
+jobs:
+  build-linux:
+    executor: ubuntu
+    steps:
+      - checkout
+
+      - run:
+          name: Install dependencies
+          command: |
+            sudo apt-get update
+            sudo apt-get install -y cmake clang ninja-build python3
+
+      - run:
+          name: Update git submodules
+          command: |
+            git submodule update --init --recursive
+
+      - run:
+          name: Build
+          command: |
+            python3 CreateFiles.py -server -nr -r
+            python3 Build.py
+      - store_artifacts:
+          path: build_release_native/Server/NovalandServer
+
+workflows:
+  Linux:
+    jobs:
+      - build-linux

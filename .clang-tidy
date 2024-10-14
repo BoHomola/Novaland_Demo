@@ -1,0 +1,21 @@
+# Checks:          '*,-llvm-include-order,-google-*,-fuchsia-*,-cppcoreguidelines-pro-type-union-access,-cppcoreguidelines-avoid-magic-numbers'
+# WarningsAsErrors: ''
+# HeaderFilterRegex: '.*'
+# FormatStyle:     'file'
+User: "Bo"
+HeaderFilterRegex: '' # This includes all the headers
+CheckOptions:
+  - key: "readability-identifier-naming.FunctionCase"
+    value: "snake_case"
+  - key: "readability-identifier-naming.MethodCase"
+    value: "snake_case"
+Checks: "clang-diagnostic-*,
+  clang-analyzer-*,
+  cppcoreguidelines-*,
+  -cppcoreguidelines-prefer-member-initializer,
+  -cppcoreguidelines-owning-memory,
+  -cppcoreguidelines-narrowing-conversions,
+  -cppcoreguidelines-pro-bounds-constant-array-index,
+  -cppcoreguidelines-non-private-member-variables-in-classes,
+  -cppcoreguidelines-special-member-functions,
+  -cppcoreguidelines-avoid-c-arrays"

@@ -1,0 +1,55 @@
+{
+  "definitions": {
+    "character_definitions": [
+      {
+        "definition_id": 0,
+        "base_health": 100,
+        "base_fire_delay": 5,
+        "base_fire_cooldown": 10,
+        "projectile_definition_id": 0,
+        "base_movement_speed": 300,
+        "base_angular_speed": 150,
+        "projectile_spawn_offet": {
+          "x": -2.0,
+          "y": 2.0
+        },
+        "collider_definition": {
+          "radius": 0.9
+        },
+        "rigidbody_properties": {
+          "linear_damping": 20.0,
+          "angular_damping": 20.0,
+          "density": 1.0,
+          "friction": 0.0,
+          "restitution": 0.0,
+          "group_index": 0,
+          "mask_bits.server": 65535,
+          "mask_bits.client": 1,
+          "category_bits": 2
+        }
+      }
+    ],
+    "projectile_definitions": [
+      {
+        "definition_id": 0,
+        "damage": 30,
+        "speed": 1,
+        "tick_duration": 300,
+        "collider_definition": {
+          "radius": 0.5
+        },
+        "rigidbody_properties": {
+          "linear_damping": 0.0,
+          "angular_damping": 0.0,
+          "density": 0.1,
+          "friction": 0.0,
+          "restitution": 1.0,
+          "group_index": 0,
+          "mask_bits.server": 65535,
+          "mask_bits.client": 1,
+          "category_bits": 4
+        }
+      }
+    ]
+  }
+}
