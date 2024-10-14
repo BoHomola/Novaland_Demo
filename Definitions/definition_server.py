@@ -1,11 +1,14 @@
 import json
 from flask import Flask, jsonify
 from copy import deepcopy
+import argparse
 
 app = Flask(__name__)
 
+definitions_file = ''
+
 def load_definitions():
-    with open('NovalandDefinitions.json', 'r') as file:
+    with open(definitions_file, 'r') as file:
         return json.load(file)
 
 def process_object(obj, is_client):
@@ -37,5 +40,13 @@ def get_server_definitions():
     definitions = load_definitions()
     return jsonify(process_definitions(definitions, is_client=False))
 
+@app.route('/is_init')
+def is_init():
+    return 'true'
+
 if __name__ == '__main__':
+    parser = argparse.ArgumentParser()
+    parser.add_argument('-f', type=str, help="Location of a definition file")
+    args = parser.parse_args()
+    definitions_file = args.f
     app.run(debug=True, port=5555)
